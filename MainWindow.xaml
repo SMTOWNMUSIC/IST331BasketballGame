@@ -1,0 +1,39 @@
+<Window x:Class="IST331BasketballGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IST331BasketballGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="666" Width="1248.333" Background="Black">
+   <Grid Margin="0,0,0.333,10.667">
+        <Grid Margin="40,10,0,0" HorizontalAlignment="Left" Width="1111">
+            <Image Margin="-3.977,2,-69.326,-8" Source="Images\court.jpg" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-0.866"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-2.992"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Button x:Name="button" Content="START" HorizontalAlignment="Left" Margin="408,148,0,0" VerticalAlignment="Top" Width="355" Click="StartButton" Height="175" FontSize="72" FontFamily="Showcard Gothic" Background="#FFEAAA3B"/>
+            <Button x:Name="Volume_On" HorizontalAlignment="Left" Margin="38,515,0,0" VerticalAlignment="Top" Width="98" Height="81" Click="volume_Click" FontSize="36" Background="Black">
+                <Image x:Name="volume" HorizontalAlignment="Left" Height="71" VerticalAlignment="Top" Width="72" Source="Images\volume.png" ScrollViewer.VerticalScrollBarVisibility="Hidden" RenderTransformOrigin="1.13,0.58" Visibility="Visible"/>
+            </Button>
+            <Button x:Name="buttonMute" HorizontalAlignment="Left" Margin="38,430,0,0" VerticalAlignment="Top" Width="98" Height="80" Click="MuteClick" Background="Black" RenderTransformOrigin="10.354,1.788">
+                <Image x:Name="mute" HorizontalAlignment="Left" Height="74.914" VerticalAlignment="Top" Width="66.132" Source="Images\mute.png" ScrollViewer.VerticalScrollBarVisibility="Hidden" RenderTransformOrigin="0.709,0.658" Visibility="Visible">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-1.253"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
